@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:src="@drawable/intro"
+            android:adjustViewBounds="true">
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:text="Cryptography is an ancient mathematical science that was originally used for military communications, and designed to conceal the contents of a message should it fall into the hands of the enemy. Recent developments in cryptography have added additional uses, including mechanisms for authenticating users on a network, ensuring the integrity of transmitted information and preventing users from repudiating (i.e. rejecting ownership of) their transmitted messages.
+Today, encryption is an integral part of many of the tools and protocols we rely on to protect the security of our everyday transactions and online communications. Encryption can be used on the physical layer of the Internet to scramble data that’s being transmitted via cable or radio communications. It adds support for secure communications to plaintext protocols like the Hypertext Transfer Protocol (HTTP), which enables Web browsing, and can protect the integrity of data exchanged through applications like email and mobile messengers. You can also encrypt data that is stored on devices like cellphones or computers, shielding the local copies of emails, text messages, documents, and photos from unauthorized snooping.
+How and at what layer your data is encrypted makes a huge difference. Just because a product or service uses encryption doesn’t necessarily mean that everything that’s stored on or sent over that platform is completely private. For example, Google now makes the HTTPS protocol (HTTP over an encrypted connection) the default for all Gmail traffic, which prevents unauthorized users from reading emails while they travel between Google’s email servers and end users’ computers — but it does nothing to stop Google itself from accessing plaintext copies of those conversations. If you don’t want your email provider to be able to read your messages, you have to take additional steps to implement end-to-end encryption, which refers to a system in which “messages are encrypted in a way that allows only the unique recipient of a message to decrypt it, and not anyone in between.” With end-to-end encryption, you encrypt the contents of a message on your local machine or device. That data is then transmitted as ciphertext by the email provider to the intended recipient, who is the only person who can decrypt and read it."
+            android:textSize="24sp"
+            android:adjustViewBounds="true">
+        </TextView>
+    </LinearLayout>
+</ScrollView>

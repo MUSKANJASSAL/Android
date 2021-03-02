@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My New Application</string>
+    <string name="LoginText">Login</string>
+    <string name="Button">Click Here</string>
+</resources>
+
+<!--In this file we store strings used in our application-->

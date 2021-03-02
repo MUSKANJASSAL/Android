@@ -1,0 +1,44 @@
+<!--Whatever component you develop as a part of your application, you must declare all its components in a manifest.xml
+which resides at the root of the application project directory. This file works as an interface between Android OS and your
+application, so if you do not declare your component in this file, then it will not be considered by the OS.  −-->
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
+
+<!--Here <application>...</application> tags enclosed the components related to the application.
+Attribute android:icon will point to the application icon available under res/drawable-hdpi.
+The application uses the image named ic_launcher.png located in the drawable folders
+
+The <activity> tag is used to specify an activity and android:name attribute specifies the fully qualified class name of the
+Activity subclass and the android:label attributes specifies a string to use as the label for the activity.
+
+The action for the intent filter is named android.intent.action.MAIN to indicate that this activity serves as the entry point
+for the application. The category for the intent-filter is named android.intent.category.LAUNCHER to indicate that the
+application can be launched from the device's launcher icon.
+
+The @string refers to the strings.xml file. Hence, @string/app_name refers to the app_name string defined in the strings.xml
+file, which is "HelloWorld". Similar way, other strings get populated in the application.
+
+<activity>elements for activities
+<service> elements for services
+<receiver> elements for broadcast receivers
+<provider> elements for content providers
+-->
